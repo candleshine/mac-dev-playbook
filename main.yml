@@ -24,6 +24,21 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+    - role: gantsign.visual-studio-code
+    - role: gantsign.intellij
+    - role: gantsign.visual-studio-code-extensions
+      users: 
+        - username: danielchen
+          visual_studio_code_extensions:
+            - ms-python.python      
+
+    - role: gantsign.intellij-plugins
+      intellij_plugins_intellij_home: '/opt/idea/idea-community-2016.2.5'
+      intellij_plugins_intellij_user_dirname: '.IdeaIC2016.2'
+      users:
+        - username: danielchen
+          intellij_plugins:
+            - CheckStyle-IDEA
 
   tasks:
     - import_tasks: tasks/sudoers.yml

@@ -2,6 +2,10 @@
 roles:
   - name: elliotweiser.osx-command-line-tools
   - name: geerlingguy.dotfiles
+  - name: gantsign.intellij
+  - name: gantsign.intellij-plugins
+  - name: gantsign.visual-studio-code
+  - name: gantsign.visual-studio-code-extensions
 
 collections:
   - name: geerlingguy.mac
